@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React for beginners</title>
+</head>
+<style>
+     *{ 
+        box-sizing: border-box;  
+        margin: 0; /* removing unneccasery spacing from the webpage */ 
+        padding: 0; /* removing unneccasery spacing from the webpage */ 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        z-index: 1;
+    } 
+    .red{
+       background-color: white;
+         width: 100%;
+        height: 100%; 
+    }
+    section{
+        background-color: beige;
+        width: 30%;
+        padding: 1rem 0.2rem 1rem 1rem;
+        
+    }
+.words{
+    text-align: center;
+}
+.head{
+    text-decoration: solid;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+.bottom{
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 1rem 0;
+}
+button{
+    padding: 1rem 2rem;
+    background-color:rgb(28, 248, 28);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+    .buton{
+        color: white;
+    }
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.autor{
+    display: flex;
+}
+svg{
+    fill: rgb(28, 248, 28);
+}
+p , h2 , br{
+    color: grey;
+}
+span{
+    color: grey;
+    font-weight: lighter;
+}
+.img2{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+.calender{
+    display: flex;
+}
+.cupcake{
+    width: 100%;
+    height: 100%;
+    background-image: url('image/cupcake.jpg');
+    /* opacity: 50%; */
+    background: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+}
+.container{
+    
+
+    /* background: grey(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)); */
+  
+}
+.body-split{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.ex-wrd{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    margin: 4rem 2rem 0 2rem;
+}
+.svg-ex , .svg-ext{
+    fill: rgba(26, 26, 26, 0.753);
+    /* padding: 1rem; */
+}
+.svg-ex{
+    margin: 0 1rem 0 0.2rem;
+}
+</style>
+<body>
+    <main class="red">
+        <section>
+            <div class="body-split">
+            <div class="container">
+                <!-- <h1 class="ex-wrd">I hope you find a<br>love you don't have<br> to question.</h1> -->
+                <img src="cupcake.jpg" alt="" class="cupcake">  
+            </div>
+            <div class="words">
+                <h1 class="head">React for Beginners</h1>
+                <div class="row">
+                    <div class="autor">
+                        <img src="cow.jpg" class="img2" > <h5>limah code<br><span>autor</span></h5>
+                    </div>
+                    <div class="calender">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8 13h8v2H8z"/><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.002 16H5V8h14l.002 12z"/></svg><p>Jan 05 2023</p>
+                    </div>
+                </div>
+                <h2 class="bottom">React is free and open-source fron..</h2>
+                <button>
+                    <p class="buton">Continue reading</p>
+                </button>
+
+            </div>
+            <svg class="svg-ex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 12c0 1.654 1.346 3 3 3 .794 0 1.512-.315 2.049-.82l5.991 3.424c-.018.13-.04.26-.04.396 0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3c-.794 0-1.512.315-2.049.82L8.96 12.397c.018-.131.04-.261.04-.397s-.022-.266-.04-.397l5.991-3.423c.537.505 1.255.82 2.049.82 1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3c0 .136.022.266.04.397L8.049 9.82A2.982 2.982 0 0 0 6 9c-1.654 0-3 1.346-3 3z"/></svg><svg class="svg-ext" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 10.132v-6c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2V22l7-4.666L19 22V10.132z"/></svg>
+            </div>
+
+        </section>
+    </main>
+  
+</body>
+</html> 
